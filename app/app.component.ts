@@ -35,4 +35,10 @@ import { GithubBrowser } from './githubBrowser.component';
     `,
     directives: [GithubBrowser]
 })
-export class App { }
+export class App {
+    constructor() {
+        debugger;
+        var asd : string = "asd";
+        asd = 123;
+    }
+}
