@@ -4,6 +4,7 @@
       "angular2": "npm:angular2@^2.0.0-beta.0",
       "es6-shim": "github:es-shims/es6-shim@^0.34.0",
       "reflect-metadata": "npm:reflect-metadata@^0.1.2",
+      "semantic-ui": "github:Semantic-Org/Semantic-UI@^2.1.8",
       "zone.js": "npm:zone.js@^0.5.10"
     },
     "devDependencies": {

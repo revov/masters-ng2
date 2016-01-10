@@ -22,8 +22,13 @@ System.config({
     "angular2": "npm:angular2@2.0.0-beta.1",
     "es6-shim": "github:es-shims/es6-shim@0.34.1",
     "reflect-metadata": "npm:reflect-metadata@0.1.3",
+    "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.8",
     "typescript": "npm:typescript@1.7.5",
     "zone.js": "npm:zone.js@0.5.10",
+    "github:Semantic-Org/Semantic-UI@2.1.8": {
+      "css": "github:systemjs/plugin-css@0.1.20",
+      "jquery": "github:components/jquery@2.2.0"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
