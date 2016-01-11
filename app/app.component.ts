@@ -39,6 +39,6 @@ export class App {
     constructor() {
         debugger;
         var asd : string = "asd";
-        asd = 123;
+        asd = "123";
     }
 }

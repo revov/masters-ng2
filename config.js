@@ -22,12 +22,12 @@ System.config({
 
   packages: {
     "app": {
-      "main": "main",
-      "defaultExtension": "ts",
-      "meta": {
-        "*.ts": {
-          "loader": "ts"
-        }
+        "main": "main",
+        "defaultExtension": "ts",
+        "meta": {
+            "*.ts": {
+                "loader": "ts"
+            }
       }
     }
   },
@@ -43,7 +43,6 @@ System.config({
     "reflect-metadata": "npm:reflect-metadata@0.1.3",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.8",
     "ts": "github:frankwallis/plugin-typescript@2.4.6",
-    "typescript": "npm:typescript@1.7.5",
     "zone.js": "npm:zone.js@0.5.10",
     "github:Semantic-Org/Semantic-UI@2.1.8": {
       "css": "github:systemjs/plugin-css@0.1.20",
