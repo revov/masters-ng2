@@ -1,0 +1,2 @@
+// Create a file authToken.ts with the same contents and replace your github token here
+export default "<yourTokenHere>";

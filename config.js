@@ -1,9 +1,8 @@
 System.config({
-//  baseURL: ".",
   defaultJSExtensions: true,
   transpiler: "typescript",
   typescriptOptions: {
-    "module": "system",
+    "module": "commonjs",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
