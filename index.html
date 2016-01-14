@@ -21,16 +21,7 @@
 
     <!-- import and run our app -->
     <script>
-        System.import("shims")
-            .then(function() {
-                return System.import("app");
-            })
-            .then(function() {
-                console.log('running');
-            })
-            .catch(function(err) {
-                console.log('Error: ', err);
-            });
+        System.import("app");
     </script>
 </body>
 </html>

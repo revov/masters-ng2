@@ -1,3 +1,4 @@
+import 'zone.js/dist/zone.min.js';
 import 'reflect-metadata';
 import 'es6-shim';
 import 'semantic-ui';

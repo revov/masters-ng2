@@ -1,19 +1,11 @@
 System.config({
-  baseURL: ".",
+//  baseURL: ".",
   defaultJSExtensions: true,
-  transpiler: "babel",
-  babelOptions: {
-    "optional": [
-      "runtime",
-      "optimisation.modules.system"
-    ]
-  },
+  transpiler: "typescript",
   typescriptOptions: {
-    "module": "es6",
-    "target": "es6",
-    "noImplicitAny": false,
-    "typeCheck": false,
-    "tsconfig": true
+    "module": "system",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
   paths: {
     "github:*": "jspm_packages/github/*",
@@ -23,19 +15,12 @@ System.config({
   packages: {
     "app": {
       "main": "main",
-      "defaultExtension": "ts",
-      "meta": {
-        "*.ts": {
-          "loader": "ts"
-        }
-      }
+      "defaultExtension": "ts"
     }
   },
 
   map: {
     "angular2": "npm:angular2@2.0.0-beta.1",
-    "babel": "npm:babel-core@5.8.34",
-    "babel-runtime": "npm:babel-runtime@5.8.34",
     "clean-css": "npm:clean-css@3.4.9",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
@@ -43,6 +28,7 @@ System.config({
     "reflect-metadata": "npm:reflect-metadata@0.1.3",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.8",
     "ts": "github:frankwallis/plugin-typescript@2.4.6",
+    "typescript": "npm:typescript@1.7.5",
     "zone.js": "npm:zone.js@0.5.10",
     "github:Semantic-Org/Semantic-UI@2.1.8": {
       "css": "github:systemjs/plugin-css@0.1.20",
@@ -126,9 +112,6 @@ System.config({
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
-    },
-    "npm:babel-runtime@5.8.34": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:browserify-aes@1.0.5": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
