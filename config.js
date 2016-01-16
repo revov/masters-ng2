@@ -1,8 +1,8 @@
 System.config({
   defaultJSExtensions: true,
-  transpiler: "typescript",
+  transpiler: false,
   typescriptOptions: {
-    "module": "commonjs",
+    "module": "system",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
@@ -14,8 +14,17 @@ System.config({
   packages: {
     "app": {
       "main": "main",
-      "defaultExtension": "ts"
+      "defaultExtension": "ts",
+      "meta": {
+            "*.ts": {
+                "loader": "ts"
+            },
+            "*.js": {
+                "loader": "ts"
+            }
+        }
     }
+    
   },
 
   map: {
@@ -26,14 +35,14 @@ System.config({
     "es6-shim": "github:es-shims/es6-shim@0.34.1",
     "reflect-metadata": "npm:reflect-metadata@0.1.3",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.8",
-    "ts": "github:frankwallis/plugin-typescript@2.4.6",
+    "ts": "github:frankwallis/plugin-typescript@2.4.7",
     "typescript": "npm:typescript@1.7.5",
     "zone.js": "npm:zone.js@0.5.10",
     "github:Semantic-Org/Semantic-UI@2.1.8": {
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "github:components/jquery@2.2.0"
     },
-    "github:frankwallis/plugin-typescript@2.4.6": {
+    "github:frankwallis/plugin-typescript@2.4.7": {
       "typescript": "npm:typescript@1.7.5"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
