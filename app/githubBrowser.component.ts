@@ -79,6 +79,7 @@ export class GithubBrowser implements OnChanges{
                 }
             });
 
+            this.errorMessage = '';
         }, error => this.errorMessage = error.json().message);
     }
     
