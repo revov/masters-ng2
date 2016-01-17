@@ -4,6 +4,7 @@
       "angular2": "npm:angular2@^2.0.0-beta.0",
       "es6-shim": "github:es-shims/es6-shim@^0.34.0",
       "reflect-metadata": "npm:reflect-metadata@^0.1.2",
+      "rxjs": "npm:rxjs@^5.0.0-beta.1",
       "semantic-ui": "github:Semantic-Org/Semantic-UI@^2.1.8",
       "zone.js": "npm:zone.js@^0.5.10"
     },
@@ -16,7 +17,13 @@
     }
   },
   "devDependencies": {
+    "angular2": "^2.0.0-beta.1",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
     "http-server": "^0.8.5",
-    "jspm": "^0.16.20"
+    "jspm": "^0.16.20",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "^0.5.10"
   }
 }

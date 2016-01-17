@@ -16,15 +16,14 @@ System.config({
       "main": "main",
       "defaultExtension": "ts",
       "meta": {
-            "*.ts": {
-                "loader": "ts"
-            },
-            "*.js": {
-                "loader": "ts"
-            }
+        "*.ts": {
+          "loader": "ts"
+        },
+        "*.js": {
+          "loader": "ts"
         }
+      }
     }
-    
   },
 
   map: {
@@ -34,6 +33,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.20",
     "es6-shim": "github:es-shims/es6-shim@0.34.1",
     "reflect-metadata": "npm:reflect-metadata@0.1.3",
+    "rxjs": "npm:rxjs@5.0.0-beta.1",
     "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.8",
     "ts": "github:frankwallis/plugin-typescript@2.4.7",
     "typescript": "npm:typescript@1.7.5",
@@ -364,6 +364,10 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:rxjs@5.0.0-beta.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:rxjs@5.0.0-beta.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
