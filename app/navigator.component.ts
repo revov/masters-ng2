@@ -9,13 +9,13 @@ import 'rxjs/add/operator/debounceTime';
 })
 @View({
     template: `
-    <div class="ui breadcrumb">
+    <div class="ui huge breadcrumb">
         <div class="ui left icon input section">
             <input placeholder="GitHub Repo" type="text" [ngFormControl]="repoControl" (focus)="onInputFocus()">
             <i class="github icon"></i>
         </div>
         <span *ngFor="#breadcrumb of breadcrumbs; #isLast = last; #i=index">
-            <div class="divider"> / </div>
+            <i class="right chevron icon divider"></i>
             <a class="section" [ngClass]="{active: isLast}" (click)="changeDir(i)">{{breadcrumb}}</a>
         </span>
     </div>
